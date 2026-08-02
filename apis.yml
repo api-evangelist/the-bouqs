@@ -1,7 +1,25 @@
 aid: the-bouqs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/the-bouqs.png
 name: The Bouqs
-description: 'The Bouqs is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'The Bouqs Co. is a direct-from-farm online flower and plant delivery
+  service headquartered in Marina del Rey, California, offering fresh cut bouquets,
+  potted plants, wedding and event florals, and recurring flower subscriptions sourced
+  from sustainable farm partners in South America and California. It was surfaced in
+  the API Evangelist network as a portfolio company of Partech. This is a direct-to-consumer
+  e-commerce brand: as of this enrichment pass it publishes no public developer API,
+  API documentation, developer portal, SDKs, or machine-readable API artifacts. This
+  profile captures verifiable company identity plus live domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/the-bouqs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Flowers
+- E-Commerce
+- Retail
+- Subscription
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/the-bouqs-domain-security.yml
 - type: Website
   url: https://bouqs.com/
+- type: Support
+  url: https://bouqs.com/help
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
